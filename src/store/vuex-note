@@ -1,0 +1,17 @@
+Vuex:
+
+1. 安装 vuex (c)npm install vuex --save
+2. 创建一个目录叫做store
+3. 在/store/目录下新建一个index.js
+4. 在index.js里引入Vue和Vuex
+5. 编写代码
+Vue.use(Vuex)
+export default new Vuex.Store({
+  state: {
+    x: 1
+    ……
+  }
+})
+6. 在main.js里引入store, 并且把store传递给vm
+
+这时在任何一个组件里都可以通过 this.$store去找到store的一些方法及状态
